@@ -2,7 +2,9 @@ import { faCartShopping, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { motion } from "motion/react"
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
+  const Navigate=useNavigate()
     return (
       <>
         <motion.div initial={{
@@ -28,10 +30,10 @@ const Navbar = () => {
                   <div className='flex justify-between navshadow h-full items-center'>
                     <div className=''></div>
                     <div className='flex  gap-20 max-md:gap-3  '>
-                      <h1 className='hover:bg-white hover:text-[#4f0333] px-2 rounded'><a href="#Services"> Services</a> </h1>
-                      <h1 className='hover:bg-white hover:text-[#4f0333] px-2 rounded'><a href="#specification">Specification</a> </h1>
-                      <h1 className='hover:bg-white hover:text-[#4f0333] px-2 rounded'>Contact</h1>
-                      <h1 className='hover:bg-white hover:text-[#4f0333] px-2 mr-2 rounded'>About</h1>
+                      <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 rounded'><a href="#Services"> Services</a> </h1>
+                      <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 rounded'><a href="#specification">Specification</a> </h1>
+                      <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] cursor-pointer px-2 rounded'>Contact</h1>
+                      <h1 onClick={()=>{Navigate('/aboutus')}} className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 cursor-pointer mr-2 rounded'>About</h1>
                       </div>
                   </div>
                 </div>

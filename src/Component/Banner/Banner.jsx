@@ -74,7 +74,7 @@ transition={{
           stiffness: 400,
           mass: 0.5 }
     }}
-                                 className='bg-white   font-semibold rounded-2xl hover:bg-[#4f0333 hover:text-white max-md:px-1 max-md:text-xl text-2xl px-3 flex items-center justify-center   py-2 text-[#4f0333]'>Start Now</motion.p>
+                                 className='bg-white cursor-pointer  font-semibold rounded-2xl hover:bg-[#4f0333 hover:scale-105 max-md:px-1 max-md:text-xl text-2xl px-3 flex items-center justify-center   py-2 text-[#4f0333]'>Start Now</motion.p>
                                  </div>
                            </h1>
  
