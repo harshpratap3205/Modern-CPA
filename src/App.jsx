@@ -7,6 +7,7 @@ import Login from "./Component/auth/Login"
 import Signup from "./Component/auth/Signup"
 import AboutUs from "./Component/AboutUs/AboutUs"
 import KnowUs from "./Component/knowus/KnowUs"
+import ContactPage from "./Component/ContactPage/ContactPage"
 function App() {
 
 
@@ -22,6 +23,7 @@ function App() {
     <Route path={'/signup'} element={<Signup/>}/>
     <Route path={'/aboutus'} element={<AboutUs/>}/>
     <Route path={'/knowus'} element={<KnowUs/>}/>
+    <Route path={'/contact'} element={<ContactPage/>}/>
     
     </Routes>
     

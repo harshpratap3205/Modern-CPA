@@ -7,6 +7,7 @@ import Services from '../Services/Services'
 import Footer from '../footer/Footer'
 import Rfp from '../Rfp/Rfp'
 import StickyScreen from '../stickyScreen/StickyScreen'
+import PayrollServices from '../PayrollServices/PayrollServices'
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
           <div className=''> <Specification/> </div>
         <div><Services/></div>
         <div><Rfp/></div>
+        <div><PayrollServices/></div>
 
         <div><Footer/></div>
            </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
         type:"spring",
             duration:1.5,
             delay:0.1
-          }} className='   fle items-cente justify-cente' >
+          }} className='' >
             <div className='h-15  items-center   flex justify-between '>
                <div className=' ml-20 text-4xl max-md:text-2xl max-md:ml-5 max-sm:text-xl font-bold flex justify-start  '>
                <h1 className='text-[#4f0333]'>Modern CPA</h1>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className='flex  gap-20 max-md:gap-3  '>
                       <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 rounded'><a href="#Services"> Services</a> </h1>
                       <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 rounded'><a href="#specification">Specification</a> </h1>
-                      <h1 className='hover:bg-white hover:scale-105 hover:text-[#4f0333] cursor-pointer px-2 rounded'>Contact</h1>
+                      <h1 onClick={()=>{Navigate('/contact')}} className='hover:bg-white hover:scale-105 hover:text-[#4f0333] cursor-pointer px-2 rounded'>Contact</h1>
                       <h1 onClick={()=>{Navigate('/aboutus')}} className='hover:bg-white hover:scale-105 hover:text-[#4f0333] px-2 cursor-pointer mr-2 rounded'>About</h1>
                       </div>
                   </div>

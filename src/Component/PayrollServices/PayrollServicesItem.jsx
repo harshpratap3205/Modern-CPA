@@ -2,7 +2,7 @@ import { useInView } from 'motion/react'
 import React, { useRef, useState } from 'react'
 import {motion} from 'motion/react'
 
-const RfpItem = ({item}) => {
+const PayrollServicesItem = ({item}) => {
     const {type,description,example,image}=item
     const myref=useRef(false)
     const ref=useRef(false)
@@ -59,4 +59,4 @@ const RfpItem = ({item}) => {
   )
 }
 
-export default RfpItem
+export default PayrollServicesItem
