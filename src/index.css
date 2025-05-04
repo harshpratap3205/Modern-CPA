@@ -1,0 +1,22 @@
+@import "tailwindcss";
+*{
+  font-family: Montserrat ;
+}
+.sliderShadow{
+  box-shadow: 0px 0px 30px 5px rgb(0, 0, 0);
+}
+.container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.customshadow{
+  box-shadow:0px 0px 22px -2px black;
+  
+  
+}
+.navshadow{
+  box-shadow:0px -4px 2px -2px #4f0333;
+
+}
