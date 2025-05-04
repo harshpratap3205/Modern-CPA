@@ -26,6 +26,7 @@ const Specification = () => {
       <motion.div 
        initial={{
         x:-3000
+        ,
       }} animate={isInView? {
         x:0
       }:{}}

@@ -12,9 +12,12 @@ const CFOItems = ({item}) => {
     <motion.div 
     
     initial={{
-        y:200
+        y:200,
+        opacity:0 
+
       }} animate={isInView? {
         y:0
+        ,opacity:1
       }:{}}
       transition={{
     type:"anticipate",
