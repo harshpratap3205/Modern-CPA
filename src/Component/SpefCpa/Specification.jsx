@@ -24,7 +24,7 @@ const Specification = () => {
  </div>
    
 <div className='overflow-scroll container '>
-<div ref={myref} className=' mb-4 bg-amber-400   overflow-scrol bloc  container '>
+<div ref={myref} className=' mb-4   overflow-scrol bloc  container '>
       <motion.div 
        initial={{
         x:-3000
@@ -38,7 +38,7 @@ const Specification = () => {
         delay:0.1
       }}
 
-      className='flex p-3 bg-amber-800   gap-6    overflow-y-aut container'> 
+      className='flex p-3 gap-6    overflow-y-aut container'> 
     {specf.map((item,index)=><SpecificationItem key={index} item={item}/>)}
     </motion.div>
   
