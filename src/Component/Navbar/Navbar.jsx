@@ -16,7 +16,7 @@ const Navbar = () => {
         type:"spring",
             duration:1.5,
             delay:0.1
-          }} className='' >
+          }} className=' ' >
             <div className='h-15  items-center   flex justify-between '>
                <div className=' ml-20 text-4xl max-md:text-2xl max-md:ml-5 max-sm:text-xl font-bold flex justify-start  '>
                <h1 className='text-[#4f0333]'>Modern CPA</h1>

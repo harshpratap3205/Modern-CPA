@@ -9,7 +9,7 @@ const Rfp = () => {
     <div>
          <div>
         <div className='flex justify-start ml-5 items-center mt-5'>
-            <h1 className='border-b-4 mt-5   border-[#4f0333]  mb-6 font-bold text-3xl text-[#4f0333]'>Retirement & Financial Planning</h1>
+            <h1 className='border-b-4 mt-5   border-[#4f0333]  mb-6 font-bold text-3xl text-[#4f0333]'>RetirementPlanning</h1>
         </div>
         <div className='px-4'>
             {RFP.overview}

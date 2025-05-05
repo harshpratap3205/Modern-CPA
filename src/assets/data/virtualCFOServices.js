@@ -226,7 +226,7 @@ export const cfo = {
           "Handles payroll for international employees, complying with local tax laws.",
         example:
           "Managing payroll for a remote team across the US, EU, and Asia.",
-        image: "https://images.unsplash.com/photo-1521790981131-aa8d4c87a776",
+        image: "https://zalaris.com/wp-content/uploads/2023/07/BP_FAQ-Global-payroll-management_1400x750.jpg",
       },
     ],
   };

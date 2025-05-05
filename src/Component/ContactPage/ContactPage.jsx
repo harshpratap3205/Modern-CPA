@@ -3,28 +3,37 @@ import emailjs from '@emailjs/browser';
 import { CheckCircleIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 const ContactPage = () => {
-  const form = useRef();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setErrorMessage('');
-    setSuccessMessage('');
-
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+       
+    const form = useRef();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+    const key ='_qhHhFE_f7xHoPXM_'
+    const service ='service_jmenm2a'
+    const template ='template_xqk2jdy'
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setErrorMessage('');
+        setSuccessMessage('');
+        
+        
+        emailjs.sendForm(
+            
+            service,
+            template,
+            form.current,
+            key,
+            
+    
+       
     )
     .then((result) => {
       setSuccessMessage('Message sent successfully! We will respond within 24 hours.');
       form.current.reset();
     })
     .catch((error) => {
+        console.log(error)
       setErrorMessage('Failed to send message. Please try again or contact us directly.');
     })
     .finally(() => {

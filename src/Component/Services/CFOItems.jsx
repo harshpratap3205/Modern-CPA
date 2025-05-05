@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import {motion, useInView} from 'motion/react'
 const CFOItems = ({item}) => {
-  console.log(item)
+  // console.log(item)
     const {type,description,example,image}=item
     const myref=useRef(false)
     const isInView=useInView(myref)

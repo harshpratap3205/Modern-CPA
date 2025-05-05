@@ -10,6 +10,8 @@ import StickyScreen from '../stickyScreen/StickyScreen'
 import PayrollServices from '../PayrollServices/PayrollServices'
 
 const Home = () => {
+  const baseUrl = import.meta.env.VITE_BASE_URL;
+  console.log(baseUrl)
   return (
           <>
           <div>

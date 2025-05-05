@@ -6,8 +6,8 @@ const Banner = () => {
     // console.log(bannerbg)
   return (
     <div className='w-full'> 
-          <div className='p-3   w-full'>
-              <div className={` rounded-2xl  w-full h-[80vh]  max-md:bg-contain max-md:bg-no-repeat max-md:h-[60vh]  max-sm:bg-cover    bg-center 
+          <div className='p-   w-full'>
+              <div className={` rounded-2xl  w-full h-[80vh]  max-md:bg-no-repeat max-md:h-[60vh]  max-sm:bg-cover    bg-center 
                   bg-[url('./assets/DY25_April_and_May_A_A-banner-3000x2000.jpg')] bg-cover  flex justify-between `}> 
                     <div className='text-white bg-amer-400 w-[50%] flex flex-col  pl-20 max-md:pl-3 max-md:w-[70%] justify-center gap-2'> 
  <motion.h1 initial={{ x:-700}}

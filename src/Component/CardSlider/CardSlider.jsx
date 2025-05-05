@@ -34,22 +34,23 @@ export default function CardSlider() {
   }, []);
 
   return (
-    <div className="w-full max-w-md mx-auto    flex h-120 max-sm:h-70  items-center justify-center relative  "> 
+    <div className="   w-30 flex h-120 max-sm:h-70  items-center justify-center relative  "> 
     
-    <AnimatePresence><motion.h1 
+    <AnimatePresence>
+      <motion.h1 
     key={cards[current].id}
     initial={{ x: "75%", opacity: 0 }}
-          animate={{ x: 60,  opacity: 1 }}
+          animate={{ x: 0,  opacity: 1 }}
           exit={{ x: "-70%", opacity: 0 , }}
           transition={{ duration: 0.8 }}
 
-    className="absolute top-100 max-sm:top-60 container "><hr  className={`container border-4 rounded  w-80 ${cards[current].border} `}/></motion.h1></AnimatePresence>
+    className="absolute   top-100 max-sm:top-60  flex items-center justify-center container "><hr  className={`container border-4 rounded flex  w-30 ${cards[current].border} `}/></motion.h1></AnimatePresence>
       <AnimatePresence>
         <motion.div
           key={cards[current].id}
-          initial={{ x: "75%", opacity: 0 }}
+          initial={{ x: "0%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ x: "-70%", opacity: 0 }}
+          exit={{ x: "-0%", opacity: 0 }}
           transition={{ duration: 0.8 }}
           className={`absolute top-10    mx-auto  sliderShadow flex items-center justify-center text-white text-2xl shadow-2xl w-[600px] h-[300px] max-md:w-[500px] max-md:h-[250px] max-sm:w-[300px] max-sm:h-[150px] font-bold `}
         >
