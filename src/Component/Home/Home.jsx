@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </div>
           <div className=' flex items-center justify-center'> <CardSlider/></div>
-          <div className=''> <Specification/> </div>
+          <div className=' flex flex-col'> <Specification/> </div>
         <div><Services/></div>
         <div><Rfp/></div>
         <div><PayrollServices/></div>
