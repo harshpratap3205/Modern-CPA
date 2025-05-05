@@ -23,8 +23,8 @@ const Specification = () => {
     </div>
  </div>
    
-<div className='overflow-scroll container '>
-<div ref={myref} className=' mb-4   overflow-scrol bloc  container '>
+<div ref={myref} className='overflow-scroll container '>
+<div  className=' mb-4   overflow-scrol bloc  container '>
       <motion.div 
        initial={{
         x:-3000

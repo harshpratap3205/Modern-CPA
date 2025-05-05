@@ -11,7 +11,7 @@ const RfpItem = ({item}) => {
     // console.log(isInView)
     const [shadow,setShadow]=useState(false)
   return (
-    <div >
+    <div  ref={myref} >
       <motion.div 
     
     initial={{
@@ -27,7 +27,7 @@ const RfpItem = ({item}) => {
      duration:0.5,
         delay:0.1
       }}
-      ref={myref}
+     
       
       onMouseEnter={()=>{setShadow(true)}} 
       onMouseLeave={()=>{setShadow(false)}}
@@ -41,7 +41,7 @@ const RfpItem = ({item}) => {
     //   <div>
     //     <h1 ref={ref} className='text-sm'> Discription{description}</h1>
     //   </div>
-    className={`max-w-80 rounded-xl border-2 min-h-105 hover:scale-105 p-2 ${shadow?"customshadow":""}  `}>
+    className={`max-w-80 rounded-xl border-2 min-h-90 hover:scale-105 p-2 ${shadow?"customshadow":""}  `}>
     <div className=''>
       <img className=' w-80 h-50 rounded' src={image} alt="" />
     </div>

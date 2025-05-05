@@ -9,7 +9,8 @@ const CFOItems = ({item}) => {
     const [shadow,setShadow]=useState(false)
 
   return (
-    <motion.div 
+   <div ref={myref}>
+     <motion.div 
     
     initial={{
         y:200,
@@ -24,10 +25,10 @@ const CFOItems = ({item}) => {
      duration:.5,
         delay:0.1
       }}
-      ref={myref}
+      
       onMouseEnter={()=>{setShadow(true)}} 
       onMouseLeave={()=>{setShadow(false)}}
-    className={`max-w-80 rounded-xl border-2 min-h-105 hover:scale-105 p-2 ${shadow?"customshadow":""}  `}>
+    className={`max-w-80 rounded-xl border-2 min-h-95 hover:scale-105 p-2 ${shadow?"customshadow":""}  `}>
       <div className=''>
         <img className=' w-80 h-50 rounded' src={image} alt="" />
       </div>
@@ -41,6 +42,7 @@ const CFOItems = ({item}) => {
         <h1 className='text-sm'> <span className=' font-semibold  '>Description:</span>{description}</h1>
       </div>
     </motion.div>
+   </div>
   )
 }
 
