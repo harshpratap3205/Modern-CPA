@@ -5,9 +5,9 @@ import CardSlider from '../CardSlider/CardSlider'
 import Specification from '../SpefCpa/Specification'
 import Services from '../Services/Services'
 import Footer from '../footer/Footer'
-import Rfp from '../Rfp/Rfp'
+
 import StickyScreen from '../stickyScreen/StickyScreen'
-import PayrollServices from '../PayrollServices/PayrollServices'
+import Service from '../ServicesOffer/Service'
 
 const Home = () => {
   const baseUrl = import.meta.env.VITE_BASE_URL;
@@ -28,9 +28,8 @@ const Home = () => {
             </div>
           <div className=' flex items-center justify-center'> <CardSlider/></div>
           <div className=' flex flex-col'> <Specification/> </div>
-        <div><Services/></div>
-        <div><Rfp/></div>
-        <div><PayrollServices/></div>
+        <div><Service/></div>
+        
 
         <div><Footer/></div>
            </div>

@@ -4,7 +4,7 @@ const CFOItems = ({item}) => {
   // console.log(item)
     const {type,description,example,image}=item
     const myref=useRef(false)
-    const isInView=useInView(myref)
+    const isInView=useInView(myref ,{ once: true })
     // console.log(isInView)
     const [shadow,setShadow]=useState(false)
 
